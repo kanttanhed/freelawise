@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/freelawise
+    username: admin
+    password: admin
+
+    jpa:
+      hibernate:
+        ddl-auto: validate
+      show-sql: true
+
+    flyway:
+      enabled: true
+
+  server:
+    port: 8080
